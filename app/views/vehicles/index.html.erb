@@ -2,7 +2,7 @@
 
 <h1>Listing Vehicles</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Vin</th>
@@ -15,7 +15,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody >
     <% @vehicles.each do |vehicle| %>
       <tr>
         <td><%= vehicle.vin %></td>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Vehicle', new_vehicle_path %>
+<%= link_to 'New Vehicle', new_vehicle_path ,class: "btn btn-default"%>
